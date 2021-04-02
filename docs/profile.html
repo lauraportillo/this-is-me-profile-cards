@@ -1,203 +1,219 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <title>Create cards</title>
+    <script
+      src="https://kit.fontawesome.com/f2e0e49a34.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://csshake.surge.sh/csshake.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./assets/images/favicon.png">
-  <title>Create cards</title>
-  <script src="https://kit.fontawesome.com/f2e0e49a34.js" crossorigin="anonymous"></script>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <img class="header__wrapper--brandCard" title="logo" src="./assets/images/thisismeLogo@2x.png"
+          alt="Logo This is me" />
+      </div>
+    </header>
+    <main class="mainProfile">
+      <div class="mainProfile__wrapper">
 
-  <link rel="stylesheet" href="./assets/css/main.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__wrapper">
-      <img class="header__wrapper--brandCard" title="logo" src="./assets/images/thisismeLogo@2x.png"
-        alt="Logo This is me" />
-    </div>
-  </header>
-  <main class="mainProfile">
-    <div class="mainProfile__wrapper">
-
-      <section class="resetSection">
-        <div class="resetSection__wrapper">
-          <div class="trash">
-            <button class="button js-reset">
-              <i class="far fa-trash-alt"></i>
-              <a class="button__reset " href="">Reset</a>
-            </button>
-          </div>
-          <article class="sample js-card">
-            <div class="sample__bar"></div>
-            <h3 class="sample__name js-namePreview">Nombre Apellido</h3>
-            <h4 class="sample__subtitle js-positionPreview">Front-end developer</h4>
-            <div class="sample__photo js-profileImage"></div>
-            <nav class="social">
-              <ul class="social__menu">
-                <li class="social__menu--item">
-                  <a href="" class="js-phonePreview"><i class="fas fa-mobile-alt"></i></a>
-                </li>
-
-                <li class="social__menu--item">
-                  <a class="js-emailPreview" href=""><i class="fas fa-envelope"></i></a>
-                </li>
-
-                <li class="social__menu--item">
-                  <a class="js-linkedinPreview" href="" target="_blank"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </li>
-
-                <li class="social__menu--item">
-                  <a class="js-githubPreview" href="" target="_blank"
-                    ><i class="fab fa-github-alt"></i
-                  ></a>
-                </li>
-                <li class="social__menu--home">
-                  <a
-                    class=""
-                    href="http://beta.adalab.es/project-promo-l-module-2-team-2/"
-                    target="_blank"
-                  >
-                    <img
-                      src="./assets/images/favicon.png"
-                      class="social__menu--icon"
-                      title="thisIsMe web"
-                      alt="this is me logo"
-                  /></a>
-                </li>
-              </ul>
-            </nav>
-
-          </article>
-        </div>
-      </section>
-      <!-- Formulario -->
-      <form class="form js-form" action="" method="POST">
-        <div class="form__wrapper">
-          <!-- Forumulario: Diseña  -->
-
-          <fieldset class="collapsable js-slide1">
-            <legend class="collapsable__header js-design">
-              <i class="collapsable__header--icon fa fa-object-ungroup" aria-hidden="true"></i>
-              <span class="collapsable__title">Diseña</span>
-              <i class="collapsable__header--arrow  collapsable__turn fa fa-angle-up" aria-hidden="true"></i>
-            </legend>
-
-            <div class="open collapsable__hide  design  js-content">
-              <label for="palette1" class="design__label">
-                <div class="colors">Colores</div>
-                <input id="palette1" type="radio" value="1" name="palette" class="design__radio js-palette" checked />
-
-                <ul class="palette1">
-                  <li class="design__color color1">Color A</li>
-                  <li class="design__color color2">Color B</li>
-                  <li class="design__color color3">Color C</li>
-                </ul>
-              </label>
-
-              <label for="palette2" class="design__label">
-                <input id="pallete2" type="radio" value="2" name="palette" class="design__radio js-palette" />
-                <ul class="palette2">
-                  <li class="design__color color1">Color A</li>
-                  <li class="design__color color2">Color B</li>
-                  <li class="design__color color3">Color C</li>
-                </ul>
-              </label>
-
-              <label for="palette3" class="design__label">
-                <input id="palette3" type="radio" value="3" name="palette" class="design__radio js-palette" />
-                <ul class="palette3">
-                  <li class="design__color color1">Color A</li>
-                  <li class="design__color color2">Color B</li>
-                  <li class="design__color color3">Color C</li>
-                </ul>
-              </label>
+        <section class="resetSection">
+          <div class="resetSection__wrapper">
+            <div class="trash">
+              <button class="button js-reset">
+                <i class="far fa-trash-alt"></i>
+                <a class="button__reset " href="">Reset</a>
+              </button>
             </div>
-          </fieldset>
-          <!-- Formulario: Rellena -->
-          <!-- <form action="/" method="POST"> -->
-          <fieldset class="collapsable js-slide2">
-            <legend class="collapsable__header js-fill">
-              <i class="collapsable__header--icon fa fa-keyboard-o" aria-hidden="true"></i>
-              <span class="collapsable__title">Rellena</span>
-              <i class="collapsable__header--arrow  collapsable__turn fa fa-angle-down" aria-hidden="true"></i>
-            </legend>
+            <article class="js-card">
+              <div class="sample">
+                <div class="sample__bar"></div>
+                <h3 class="sample__name js-namePreview">Nombre Apellido</h3>
+                <h4 class="sample__subtitle js-positionPreview">Front-end developer</h4>
+                <div class="sample__photo js-profileImage"></div>
+                <nav class="social">
+                  <ul class="social__menu">
+                    <li class="social__menu--item">
+                      <a href="" class="js-phonePreview"><i class="fas fa-mobile-alt"></i></a>
+                    </li>
 
-            <div class="collapsable__hide fill js-content">
-              <label for="name" class="form__label">Nombre completo</label>
+                    <li class="social__menu--item">
+                      <a class="js-emailPreview" href=""><i class="fas fa-envelope"></i></a>
+                    </li>
 
-              <input name="full_name" value="" type="text" id="name" class="form__inputText js-name js-inputText js-inputName"
-                placeholder="Ej: Sally Jill" />
+                    <li class="social__menu--item">
+                      <a class="js-linkedinPreview" href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
 
-              <label for="job" class="form__label">Puesto</label>
-              <input name="job" value="" type="text" id="job" class="form__inputText js-position js-inputText js-inputJob"
-                placeholder="Ej: Front-end unicorn " />
-
-              <label for="photo" class="form__label">Imagen de perfil</label>
-              <div class="photo">
-                <button class="photo__btn js-profileTrigger">Añadir imagen</button>
-                <input class="hidden js-profileUploadBtn" type="file" />
-                <div class="photo__preview js-inputText js-profilePreview"></div>
+                    <li class="social__menu--item">
+                      <a class="js-githubPreview" href="" target="_blank"><i class="fab fa-github-alt"></i></a>
+                    </li>
+                    <li class="social__menu--home">
+                      <a class="" href="http://beta.adalab.es/project-promo-l-module-2-team-2/" target="_blank">
+                        <img src="./assets/images/favicon.png" class="social__menu--icon homeIcon filter" title="thisIsMe web"
+                          alt="this is me logo" /></a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
+            </article>
+          </div>
+        </section>
+        <!-- Formulario -->
+        <form class="form js-form" action="" method="POST">
+          <div class="form__wrapper">
+            <!-- Forumulario: Diseña  -->
 
-              <label for="email" class="form__label">Email</label>
-              <input name="email" value="" id="email" type="email" class="js-email form__inputText js-inputText js-inputEmail"
-                placeholder="Ej: sally-hill@gmail.com " />
+            <fieldset class="collapsable js-slide1">
+              <legend class="collapsable__header js-design">
+                <i class="collapsable__header--icon fa fa-object-ungroup" aria-hidden="true"></i>
+                <span class="collapsable__title">Diseña</span>
+                <i class="collapsable__header--arrow  collapsable__turn fa fa-angle-up" aria-hidden="true"></i>
+              </legend>
 
-              <label for="phone" class="form__label">Teléfono</label>
-              <input name="phone" value="" id="phone" type="tel" class="form__inputText js-phone js-inputText js-inputPhone"
-                placeholder="Ej: 555666888" />
+              <div class="open collapsable__hide  design  js-content">
+                <label for="palette1" class="design__label">
+                  <div class="colors">Colores</div>
+                  <input id="palette1" type="radio" value="1" name="palette" class="design__radio js-palette" checked />
 
-              <label for="linkedin" class="form__label">Linkedin</label>
-              <input name="linkedin" value="" id="linkedin" type="text"
-                class="js-linkedin form__inputText js-inputText js-inputLinkedin"
-                placeholder="Ej: linkekin.com/in/sally..sally-hill" />
+                  <ul class="palette1">
+                    <li class="design__color color1">Color A</li>
+                    <li class="design__color color2">Color B</li>
+                    <li class="design__color color3">Color C</li>
+                  </ul>
+                </label>
 
-              <label for="github" class="form__label">Github</label>
-              <input name="github" value="" id="github" type="text" class="form__inputText js-github js-inputText js-inputGithub"
-                placeholder="Ej: @sally-hill" />
-            </div>
-          </fieldset>
-          <!-- </form> -->
-          <!-- Formulario: Comparte  -->
-          <fieldset class="collapsable js-slide3">
-            <legend class="collapsable__header js-share">
-              <i class="collapsable__header--icon fa fa-share-alt" aria-hidden="true"></i>
-              <span class="collapsable__title">Comparte</span>
-              <i class="collapsable__header--arrow  collapsable__turn fa fa-angle-down" aria-hidden="true"></i>
-            </legend>
+                <label for="palette2" class="design__label">
+                  <input id="pallete2" type="radio" value="2" name="palette" class="design__radio js-palette" />
+                  <ul class="palette2">
+                    <li class="design__color color1">Color A</li>
+                    <li class="design__color color2">Color B</li>
+                    <li class="design__color color3">Color C</li>
+                  </ul>
+                </label>
 
-            <div class="shareContainer js-content">
-              <section class="share collapsable__hide">
-                <div class="share__btn">
-                  <i class="share__btn--icon fa fa-address-card-o" aria-hidden="true"></i>
-                  <input class="share__btn--text" type="submitt" value="Crear tarjeta" name="shareButton" />
+                <label for="palette3" class="design__label">
+                  <input id="palette3" type="radio" value="3" name="palette" class="design__radio js-palette" />
+                  <ul class="palette3">
+                    <li class="design__color color1">Color A</li>
+                    <li class="design__color color2">Color B</li>
+                    <li class="design__color color3">Color C</li>
+                  </ul>
+                </label>
+
+                <label for="palette4" class="design__label">
+                  <input id="palette4" type="radio" value="4" name="palette" class="design__radio js-palette" />
+                  <ul class="palette4">
+                    <li class="design__color color1">Color A</li>
+                    <li class="design__color color2">Color B</li>
+                    <li class="design__color color3">Color C</li>
+                  </ul>
+                </label>
+
+              </div>
+            </fieldset>
+            <!-- Formulario: Rellena -->
+            <!-- <form action="/" method="POST"> -->
+            <fieldset class="collapsable js-slide2">
+              <legend class="collapsable__header js-fill">
+                <i class="collapsable__header--icon fa fa-keyboard-o" aria-hidden="true"></i>
+                <span class="collapsable__title">Rellena</span>
+                <i class="collapsable__header--arrow  collapsable__turn fa fa-angle-down" aria-hidden="true"></i>
+              </legend>
+
+              <div class="collapsable__hide fill js-content">
+                <label for="name" class="form__label">Nombre completo</label>
+
+                <input name="full_name" value="" type="text" id="name" class="form__inputText js-name js-inputText js-inputName"
+                  placeholder="Ej: Sally Jill" />
+
+                <label for="job" class="form__label">Puesto</label>
+                <input name="job" value="" type="text" id="job" class="form__inputText js-position js-inputText js-inputJob"
+                  placeholder="Ej: Front-end unicorn " />
+
+                <label for="photo" class="form__label">Imagen de perfil</label>
+                <div class="photo">
+                  <button class="photo__btn js-profileTrigger">Añadir imagen</button>
+                  <input class="hidden js-profileUploadBtn" type="file" />
+                  <div class="photo__preview js-inputText js-profilePreview"></div>
                 </div>
 
-                <section class="created">
-                  <h3 class="created__title">La tarjeta ha sido creada:</h3>
-                  <p class=" created__url">https://awesome-profile-card.com?id=A456DF0001 </p>
-                  <button class="created__btnTwitter"><i class="fa fa-twitter" aria-hidden="true"></i> Compartir en
-                    twitter</button>
+                <label for="email" class="form__label">Email</label>
+                <input name="email" value="" id="email" type="email" class="js-email form__inputText js-inputText js-inputEmail"
+                  placeholder="Ej: sally-hill@gmail.com " />
+
+                <label for="phone" class="form__label">Teléfono</label>
+                <input name="phone" value="" id="phone" type="tel" class="form__inputText js-phone js-inputText js-inputPhone"
+                  placeholder="Ej: 555666888" />
+
+                <label for="linkedin" class="form__label">Linkedin</label>
+                <input name="linkedin" value="" id="linkedin" type="text"
+                  class="js-linkedin form__inputText js-inputText js-inputLinkedin"
+                  placeholder="Ej: linkekin.com/in/sally..sally-hill" />
+
+                <label for="github" class="form__label">Github</label>
+                <input name="github" value="" id="github" type="text" class="form__inputText js-github js-inputText js-inputGithub"
+                  placeholder="Ej: @sally-hill" />
+              </div>
+            </fieldset>
+            <!-- </form> -->
+            <!-- Formulario: Comparte  -->
+            <fieldset class="collapsable js-slide3">
+              <legend class="collapsable__header js-share">
+                <i class="collapsable__header--icon fa fa-share-alt" aria-hidden="true"></i>
+                <span class="collapsable__title">Comparte</span>
+                <i class="collapsable__header--arrow  collapsable__turn fa fa-angle-down" aria-hidden="true"></i>
+              </legend>
+
+              <div class="shareContainer js-content">
+                <section class="share collapsable__hide">
+                  <div class="share__btn js-create-btn">
+                    <button class="share__btn--text">
+                      <i
+                        class="share__btn--icon fa fa-address-card-o"
+                        aria-hidden="true"
+                      ></i
+                      >Crear tarjeta
+                    </button>
+                  </div>
                 </section>
-              </section>
-            </div>
-          </fieldset>
-        </div>
-      </form>
+              </div>
+            </fieldset>
+            <section class="created js-created created--hidden">
+              <h3 class="created__title">La tarjeta ha sido creada:</h3>
+              <a class="created__url js-card-result" href=""></a>
+              <button class="created__btnTwitter">
+                <a href="https://twitter.com/?lang=es" target="_blank" class="twitter">
+                  <i class="fa fa-twitter" aria-hidden="true"></i> Compartir en twitter</a
+                >
+              </button>
+            </section>
+            <section class="js-error created__error created--hidden">
+              <h4 class="created__error--title">Por favor complete los datos:</h4>
+              <p class="js-consoleError"></p>
+            </section>
 
-  </main>
-  </div>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <small class="footer__wrapper--copy">Awesome profile-cards &copy; 2021</small>
-      <img class="footer__wrapper--adalab" src="./assets/images/logo-adalab.png" alt="logo-adalab" />
+          </div>
+        </form>
+
+    </main>
     </div>
-  </footer>
-  <script type="text/javascript" src="./assets/js/main.js"></script>
-</body>
-
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <small class="footer__wrapper--copy">This is me &copy; 2021</small>
+        <img class="footer__wrapper--adalab" src="./assets/images/logo-adalab.png" alt="logo-adalab" />
+      </div>
+    </footer>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
 </html>
